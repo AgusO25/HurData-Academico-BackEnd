@@ -1,0 +1,41 @@
+Bueno, aca mas o menos explico como se va estructurando las carpetas
+
+Son libres de modificar cualquier cosa
+
+------------------------------------------
+
+*BACKEND*
+
+# La carpeta backend/app/etl va a servir para los Scripts de procesar los Excel
+
+# La carpeta backend/app/api los Endpoints / Rutas de siempre.
+
+# El archivo en la carpte backend/app/api/main.py Va a ser el punto de entrada del backend (Si les parece)
+
+# Falta crear una carpeta con las librerias adentro de la carpeta backend
+
+
+------------------------------------------
+
+*FRONTEND*
+
+Bueno, la carpeta en general todo el codigo de interfaz
+
+# La carpeta frontend/src/components Van a entrar todo el tema de los graficos, tablas, tarjetas de alertas, todo lo que necesitemos visualmente para la pagina.
+
+------------------------------------------
+
+FALTA UNA CARPETA QUE SEA PARA GUARDAR LOS EXCELS Y PODER PROBARLOS. 
+
+Un dataExcels/ quizas??? (Datos Sensibles)
+
+
+------------------------------------------
+
+# .gitignore  Para no subir archivos pesados. (node_modules ponele)
+
+Faltaria un archivo que explique el proyecto
+
+------------------------------------------
+
+Todavia no hay DEPENDENCIAS. (npm i)
