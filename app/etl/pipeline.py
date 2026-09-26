@@ -1,7 +1,7 @@
 from pathlib import Path
 from app.etl.extractor import ExcelExtractor
-from app.etl.transformer import SIUTransformer # (O ExcelTransformer según como lo hayas llamado)
-from app.config import config  # Importamos el archivo que creamos arriba
+from app.etl.transformer import ExcelTransformer 
+from app.config import config
 
 def ejecutar_etl_base():
     # Variable de configuración para armar la ruta
@@ -13,7 +13,7 @@ def ejecutar_etl_base():
         df_crudo = extractor.extraer()
         
         # 2. Transformación
-        transformer = SIUTransformer()
+        transformer = ExcelTransformer()
         df_limpio = transformer.limpiar_basico(df_crudo)
         
         # 3. Carga
